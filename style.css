@@ -1,20 +1,20 @@
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     line-height: 1.6;
-    background-image: url('images.jpeg');
+    background-image: url("images.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: black;
 }
 
-.cabecalho{
-    background-color: rgba(0, 255, 34, 0.603);
+.cabecalho {
+    background-color: rgba(0, 255, 34, 0.76);
     color: black;
     display: flex;
     justify-content: space-between;
@@ -23,3 +23,47 @@ body {
     padding: 12px 20px;
     border-radius: 5px;
 }
+
+.cabecalho-imagem {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cabecalho-subtitulo {
+    font-size: 14px;
+}
+
+.cabecalho-titulo {
+    font-size: 50px;
+}
+
+.cabecalho-lista {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.cabecalho-lista-item {
+    display: block;
+}
+
+.cabecalho a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+.cabecalho a:hover {
+    background-color: #333;
+}
+
