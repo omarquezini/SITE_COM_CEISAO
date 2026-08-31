@@ -1,6 +1,6 @@
 
 .cabecalho{
-background-color: #d2ddbe;
+background-color: #a6ff00;
 color: darkgreen;
 display: flex;  /* deixa o conteudo flex p N tipos de tela */
 justify-content: space-between; /*espaço entre uma coisa e outra */
@@ -56,5 +56,16 @@ justify-content: center;
 gap: 6px;
 padding: 6px 8px;
 border-radius: 4px;
+}
+
+.descricao{
+    text-align: center;
+    margin: 2em 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+.descricao h2.
+.fale-conosco{
+
 }
 
