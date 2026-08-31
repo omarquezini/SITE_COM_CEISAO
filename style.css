@@ -1,69 +1,60 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+.cabecalho{
+background-color: #d2ddbe;
+color: darkgreen;
+display: flex;  /* deixa o conteudo flex p N tipos de tela */
+justify-content: space-between; /*espaço entre uma coisa e outra */
+align-items: center; /*alinhamento*/
+gap:20px; /* so funciona se usar com display flex . Espaco entre os elementos. */
+padding: 12px 20px;
+border-radius: 5px; /* arredonda os cantos */
 }
 
-body {
-    line-height: 1.6;
-    background-image: url("images.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: black;
+.cabecalho-marca{
+display: flex;
+align-items: center;
+gap: 12px;
 }
 
-.cabecalho {
-    background-color: rgba(0, 255, 34, 0.76);
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    padding: 12px 20px;
-    border-radius: 5px;
+.cabecalho-imagem{
+width: 150px;
+height: 90px;
+object-fit: cover;
+border-radius: 5px;
 }
 
-.cabecalho-imagem {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 5px;
+.cabecalho-titulo{
+color:#414c2f;
 }
 
-.cabecalho-subtitulo {
-    font-size: 14px;
+.cabecalho-subtitulo{
+font-size: 14px;
+color: #9f7f40;
 }
 
-.cabecalho-titulo {
-    font-size: 50px;
+.cabecalho-lista{
+list-style: none;
+display:flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 8px;
 }
 
-.cabecalho-lista {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
+.cabecalho-lista-item{
+display: block;
 }
 
-.cabecalho-lista-item {
-    display: block;
-}
+.cabecalho a{
+color: #19240f;
+font-family: Calibri, sans-serif;
+font-size: 20px;
+text-decoration: none;
 
-.cabecalho a {
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    padding: 6px 8px;
-    border-radius: 4px;
-}
-
-.cabecalho a:hover {
-    background-color: #333;
+display:flex;
+align-items: center;
+justify-content: center;
+gap: 6px;
+padding: 6px 8px;
+border-radius: 4px;
 }
 
