@@ -1,71 +1,267 @@
-
-.cabecalho{
-background-color: #a6ff00;
-color: darkgreen;
-display: flex;  /* deixa o conteudo flex p N tipos de tela */
-justify-content: space-between; /*espaço entre uma coisa e outra */
-align-items: center; /*alinhamento*/
-gap:20px; /* so funciona se usar com display flex . Espaco entre os elementos. */
-padding: 12px 20px;
-border-radius: 5px; /* arredonda os cantos */
+.cabecalho {
+    background-color: #a6ff01;
+    color: darkgreen;
+    display: flex; /* deixa o conteúdo flex para adaptar a vários tipos de tela */
+    justify-content: space-between; /* espaço entre uma coisa e outra */
+    align-items: center; /* alinhamento */
+    gap: 20px; /* espaço entre os elementos */
+    padding: 12px 20px;
+    border-radius: 5px; /* arredonda os cantos */
 }
 
-.cabecalho-marca{
-display: flex;
-align-items: center;
-gap: 12px;
+.cabecalho-marca {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
-.cabecalho-imagem{
-width: 150px;
-height: 90px;
-object-fit: cover;
-border-radius: 5px;
+.cabecalho-imagem {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
-.cabecalho-titulo{
-color:#414c2f;
+.cabecalho-subtitulo {
+    font-size: 14px;
+    color: #9f7f40;
 }
 
-.cabecalho-subtitulo{
-font-size: 14px;
-color: #9f7f40;
+.cabecalho-titulo {
+    color: #52702f;
+    font-size: clamp(34px, 5vw, 58px);
 }
 
-.cabecalho-lista{
-list-style: none;
-display:flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 8px;
+.cabecalho-lista {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
 }
 
-.cabecalho-lista-item{
-display: block;
+.cabecalho-lista-item {
+    display: block;
 }
 
-.cabecalho a{
-color: #19240f;
-font-family: Calibri, sans-serif;
-font-size: 20px;
-text-decoration: none;
+.cabecalho a {
+    color: #19240f;
+    font-family: Calibri, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
 
-display:flex;
-align-items: center;
-justify-content: center;
-gap: 6px;
-padding: 6px 8px;
-border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 6px 8px;
+    border-radius: 4px;
 }
 
-.descricao{
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxx falta inserir: 08/09 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+.cabecalho a:hover {
+    background-color: #EBF1E0;
+    color: #2e431c;
+}
+
+.botao-tema {
+    border: none;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #fcf8ec;
+    background-color: #52702f;
+    font-family: serif;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.botao-tema:hover {
+    background-color: #2e431c;
+}
+
+/* Seções com texto e imagens */
+.secao {
+    max-width: 1200px;
+    margin: 0 auto 2em;
+    padding: 18px;
+    display: flex;
+    gap: 22px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 8px 8px 18px #2E431C2E;
+}
+
+.texto {
+    flex: 1;
+    align-self: center;
+    padding: 0 20px;
+    max-width: 70ch;
+}
+
+.texto h2 {
+    margin-bottom: 1em;
     text-align: center;
+}
+
+.texto p {
+    line-height: 1.8;
+    margin-top: 1em;
+    text-align: left;
+}
+
+.imagem {
+    flex: 1;
+    text-align: center;
+    display: grid;
+    gap: 10px;
+}
+
+.imagem img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.descricao {
+    text-align: center;
+    text-decoration-style: solid;
     margin: 2em 0;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.26);
+    text-shadow: 2px 2px 5px #2e431c2e;
 }
 
-.descricao h2.
-.fale-conosco{
-
+.descricao h2,
+.fale-conosco h2 {
+    font-size: clamp(28px, 4vw, 44px);
+    line-height: 1.2;
+    color: #2e431c;
 }
+
+/* Seção de contato */
+.fale-conosco {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+}
+
+/* Título */
+.fale-conosco h2 {
+    margin: 0 0 10px;
+    text-align: center;
+    color: #4b2e16;
+    font-size: 32px;
+}
+
+/* Texto de introdução */
+.fale-conosco > p {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+}
+
+/* Formulário */
+#formulario-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Labels */
+#formulario-contato label {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #4b2e16;
+}
+
+/* Campos */
+#formulario-contato input,
+#formulario-contato textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Efeito ao clicar nos campos */
+#formulario-contato input:focus,
+#formulario-contato textarea:focus {
+    border-color: #7a9e3a;
+    box-shadow: 0 0 0 3px rgba(122, 158, 58, 0.15);
+}
+
+/* Textarea */
+#formulario-contato textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+/* Botão */
+#formulario-contato button {
+    margin-top: 15px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #6b8e23;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efeito do botão */
+#formulario-contato button:hover {
+    background-color: #55751b;
+    transform: translateY(-2px);
+}
+
+/* Mensagem de resposta */
+.aviso-formulario {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #6b8e23;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+    .fale-conosco {
+        width: 90%;
+        padding: 25px 20px;
+        margin: 30px auto;
+    }
+
+    .fale-conosco h2 {
+        font-size: 27px;
+    }
+
+    #formulario-contato input,
+    #formulario-contato textarea {
+        font-size: 15px;
+    }
+}
+
+.fale-conosco fora{
+    display: flex;
+    flex-direction: column;
+}
+.fale-conosco label{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #19240f;
+    font
+}
+
+
 
