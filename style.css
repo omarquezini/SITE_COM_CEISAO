@@ -408,5 +408,26 @@ body.tema-escuro .voltar {
 box-shadow: 0 3px 9px #00000073;
 }
 
+#fim {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#fim p {
+    margin: 0;
+    font-size: 14px;
+}
+
+E no HTML:
+
+<footer id="fim">
+    <p>&copy; 2026 - Todos os direitos reservados.</p>
+</footer>
+
 
 
